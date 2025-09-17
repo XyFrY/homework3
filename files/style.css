@@ -1,0 +1,149 @@
+.primColor {
+    color: darkmagenta;
+}
+
+.subColor {
+    color: palevioletred;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 400px auto;
+    grid-template-rows: 200px auto;
+    grid-template-areas: 
+    "navigation header header"
+    "navigation main main"
+    "navigation footer footer"
+    ;
+    row-gap: 20px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.navigation {
+    grid-area: navigation;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footer {
+    grid-area: footer;
+    position: relative;
+    height: 300px;
+}
+
+.main {
+    grid-area: main;
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.sidebar {
+    color: darkmagenta; 
+    max-width: 150px;
+    display: flex;
+    align-items: start;
+    padding: 24.75px;
+    justify-content: space-evenly;
+} 
+
+.listHeader {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    color: darkmagenta;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 20px;
+    flex-direction: row;
+}
+
+.listSub {
+    display: flex;
+    flex: 1;
+    align-items: start;
+    color:palevioletred;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 20px;
+    flex-direction: row;
+}
+
+.align {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div {
+    background-color: gainsboro;
+    border: 2px solid goldenrod;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: 100 100 100;
+    grid-template-columns: 100 500 100;
+    grid-template-areas: 
+    "title description images"
+    "blankTitle blankDes blankImg"
+    "blankTitle blankDes blankImg"
+    ;
+    column-gap: 10px;
+    row-gap: 5px;
+}
+
+.title {
+    grid-area: title;
+    color: darkmagenta;
+}
+
+.description {
+    grid-area: description;
+    color: darkmagenta;
+}
+
+.images {
+    grid-area: images;
+    color: darkmagenta;
+}
+
+.blankTitle {
+    grid-area: blankTitle;
+    color: palevioletred;
+}
+
+.blankDes {
+    grid-area: blankDes;
+    color: palevioletred;
+}
+
+.blankImg {
+    grid-area: blankImg;
+}
+
+.contact {
+    position: absolute;
+    right: 1250px;
+    top: 50px
+}
+
+.button {
+    display: inline-block;
+    background-color: darkmagenta;
+    color:palevioletred;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
